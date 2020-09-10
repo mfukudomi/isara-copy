@@ -35,6 +35,10 @@ p, h1, h2 {
     text-align: left;
 }
 
+.brsp{
+    display: none;
+}
+
 .header-in p {
     margin: 0;
     display: inline-block;
@@ -113,7 +117,7 @@ header {
 }
 
 .ask .txtm {
-    padding-top: 40px;
+    /* padding-top: 40px; */
 }
 
 .ask-point {
@@ -141,7 +145,7 @@ header {
 .btn2 a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 28px;
+
     display: block;
     /*ここからポインタ範囲を拡張*/
     height: 100%;
@@ -153,7 +157,6 @@ header {
 }
 
 .ask h2 {
-    font-size: 21px;
     margin-top: 30px;
 }
 
@@ -168,7 +171,7 @@ header {
 .freedom {
     background-image: url(../image/introbottom.jpg);
     background-size: cover;
-    height: 560px;
+    height: 587px;
     position: relative;
 }
 
@@ -888,4 +891,42 @@ footer {
 .footer-sns {
     text-align:center;
     padding-bottom:30px;
+}
+/* //////////////// レスポンシブ //////////////// */
+@media(max-width:768px){
+    .txtl{
+        font-size:20px;
+    }
+
+    .txtm{
+        font-size: 15px;
+    }
+
+    .txts{
+        font-size: 12px;
+    }
+
+    .txts{
+        font-size:8px;
+    }
+
+    .brsp{
+        display: block;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .txtbox {
+        width: 90%;
+    }
+
+    .freedom { 
+        padding: 30px 0; 
+        /* height: inherit;  */
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-position: center bottom; 
+    }
 }
