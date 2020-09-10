@@ -235,7 +235,7 @@ header {
 .about {
     background-color: #FEF5E0;
     padding-top: 40px;
-    height: 570px;
+    padding-bottom:40px;
 }
 
 .about .txtm {
@@ -251,22 +251,22 @@ header {
 .about-box {
     margin: 30px;
     padding: 20px;
-    padding-bottom: 0;
     border: solid 2px #EAB857;
     border-radius: 3px;
     background-color: #fff;
-    height: 230px
+    text-align:center;
+}
+.about-box img{
+    height:60px;
 }
 
 .picturebox {
     text-align: center;
-    width: 155px;
-    height: 135px;
+    display: inline-block;
 }
 
 .picturebox p {
     font-size: 12px;
-    margin-top: 10px;
 }
 
 /* /////////////////////// about-second /////////////////////// */
@@ -275,19 +275,17 @@ header {
     background-image: url(../image/aboutsecondbg.jpg);
     background-size: cover;
     height: 450px;
+padding:50px 0;
 }
 
 .about-second h1 {
     color: #fff;
-    padding-top: 50px;
-    font-weight: 100;
+    font-weight: 600;
 }
 
 .about-second h2 {
     color: #fff;
     font-weight: 100;
-    font-size: 20px;
-    line-height: 60px;
 }
 
 .about-second-txt {
@@ -339,7 +337,7 @@ header {
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 /* /////////////////////// learning /////////////////////// */
@@ -895,11 +893,11 @@ footer {
 /* //////////////// レスポンシブ //////////////// */
 @media(max-width:768px){
     .txtl{
-        font-size:20px;
+        font-size:18px;
     }
 
     .txtm{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .txts{
@@ -929,4 +927,48 @@ footer {
         background-size: contain; 
         background-position: center bottom; 
     }
+
+
+    .about-box img{
+        height:30px;
+    }
+
+    .about-second{
+        background-image:url(../image/aboutsecondbgsp.jpg);
+        padding:30px;
+    }
+
+    .about-second-flex {
+        display: block;
+        margin:0 auto;
+    }
+
+    .about-second-step {
+        width: 90%;
+        padding: 0;
+        margin:0 auto;
+        height:auto;
+        padding-bottom:10px;
+        margin-bottom:10px;
+    }
+
+    .about-second-txt2{
+        font-size:13px;
+    }
+    .about-second-txt3{
+        margin-top:10px;
+        font-size:13px;
+    }
+
+    .about-second-txt4{
+        margin-top:10px;
+        font-size:13px;
+    }
+
+    .skillup h2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+    
 }
