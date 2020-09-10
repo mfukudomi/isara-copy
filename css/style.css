@@ -92,7 +92,7 @@ header {
     background-image: url('../image/main.jpg');
     background-size: cover;
     height: 500px;
-    text-align: center
+    text-align: center;
 }
 
 .isaratop h1 {
@@ -427,7 +427,9 @@ header {
     margin: 10px 10px;
     box-sizing: border-box;
     padding: 10px;
+    text-align:center;
 }
+
 
 .menber-content .txtss {
     margin: 0 0 10px;
@@ -442,7 +444,7 @@ header {
     margin-top: -50px;
     padding: 40px 50px;
     font-size: 16px;
-    letter-spacing: 2.5px;
+    letter-spacing: 2.0px;
     line-height: 25px;
     box-sizing: border-box;
 }
@@ -631,11 +633,11 @@ header {
 .juko {
     margin: 0 auto;
     margin-bottom: 40px;
+    text-align:center;
 }
 
-.juko img {
-    margin: 0 auto;
-}
+
+
 
 .juko-info {
     background-color: #fef5e0;
@@ -731,12 +733,20 @@ header {
     margin: 0 auto;
 }
 
+.present-title{
+    position: relative;
+    bottom: -45px; 
+    width: 45%; 
+    background-color: #f7c23c; 
+    margin: 0 auto; 
+}
+
 .present0 {
     width: 1170px;
     border: solid 2px #fff;
     padding: 50px 20px;
     margin: 0 auto;
-    margin-top: -20px;
+    /* margin-top: -20px; */
     z-index: 1;
 }
 
