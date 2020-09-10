@@ -576,6 +576,8 @@ header {
     background-image: url(../image/classbg.jpg);
     background-size: cover;
     height: 800px;
+    margin:0 auto;
+    text-align:center;
 }
 
 .what-isara .what {
@@ -591,6 +593,8 @@ header {
     border-radius: 3px;
     width: 30%;
     margin-right: 30px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .what-wrapper p {
