@@ -349,7 +349,7 @@ header {
 
 .learning-box {
     margin: 40px auto;
-    width:90%;
+    width: 90%;
 }
 
 .learning-box img {
@@ -371,9 +371,9 @@ header {
     margin-bottom: 40px;
 }
 
-.merit-space{
-    width:90%;
-    margin:0 auto;
+.merit-space {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .merit-box {
@@ -391,14 +391,14 @@ header {
     font-weight: 100;
 }
 
-.merit-box p{
-    text-align:left;
+.merit-box p {
+    text-align: left;
 }
 
 .merit-box2 {
     text-align: center;
     margin: 30px 30px 10px 30px;
-    padding:30px 0;
+    padding: 30px 0;
     border: solid 2px #eab857;
     border-radius: 3px;
     background-color: #fff;
@@ -407,7 +407,7 @@ header {
 
 .merit-box2 h1 {
     font-weight: 600;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     text-align: center;
     color: #eab857
 }
@@ -424,8 +424,8 @@ header {
 .menber {
     background-image: url(../image/teacherbg.jpg);
     background-size: cover;
-    text-align:center;
-    padding:50px 0;
+    text-align: center;
+    padding: 50px 0;
 }
 
 .menber h2 {
@@ -437,8 +437,6 @@ header {
 .menber p {
     color: #fff;
 }
-
-
 
 .menber-info {
     vertical-align: top;
@@ -544,12 +542,10 @@ header {
 
 .remote-answer h2 {
     padding: 20px;
-    font-size: 28px;
 }
 
 .remote-answer .txts {
     padding-bottom: 36px;
-    font-weight: 600;
 }
 
 .remote-answer .txtss {
@@ -594,9 +590,10 @@ header {
 .what-isara {
     background-image: url(../image/classbg.jpg);
     background-size: cover;
-    height: 800px;
+    /* height: 800px; */
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .what-isara .what {
@@ -646,7 +643,6 @@ header {
 }
 
 .cost .txtm {
-    font-size: 20px;
     padding-top: 45px;
     color: #fff;
     font-weight: 600;
@@ -657,6 +653,10 @@ header {
     margin: 0 auto;
     margin-bottom: 40px;
     text-align: center;
+}
+
+.juko-box-sp {
+    display: none;
 }
 
 .juko-info {
@@ -906,27 +906,29 @@ footer {
     padding-bottom: 30px;
 }
 
-/* //////////////// レスポンシブ max:768 //////////////// */
-@media(max-width:1000px) {
+/* //////////////// レスポンシブ //////////////// */
 
-    .row{
-    }
-    
-    .menber-info{
+/* //////////////// max:1000 //////////////// */
+
+@media(max-width:1000px) {
+    .row {}
+    .menber-info {
         display: block;
-        width:90%;
-        margin:0 auto;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
-/* //////////////// レスポンシブ max:768 //////////////// */
+/* //////////////// レスポンシブ //////////////// */
+
+/* //////////////// max:768 //////////////// */
 
 @media(max-width:768px) {
     .txtl {
         font-size: 18px;
     }
     .txtm {
-        font-size: 13px;
+        font-size: 15px;
     }
     .txts {
         font-size: 12px;
@@ -942,6 +944,20 @@ footer {
     }
     .txtbox {
         width: 90%;
+    }
+    .isaratop {
+        background-image: url('../image/mainsp.jpg');
+        height: 312px;
+    }
+    .isaratop h1 {
+        line-height: 20px;
+        padding-top: 50px;
+    }
+    .isaratop p {
+        margin-top: 20px;
+    }
+    .ask {
+        padding-top: 30px;
     }
     .freedom {
         padding: 30px 0;
@@ -985,59 +1001,152 @@ footer {
         padding-bottom: 20px;
         font-size: 12px;
     }
-
     .learning-box img {
         margin-right: 0px;
         padding: 0 15px;
         width: 20%;
         height: auto;
     }
-
-    .merit-space{
-        width:100%;
-        margin:0 auto;
-        text-align:center;
+    .merit-space {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
     }
-    
     .merit-box {
-        width:90%;
+        width: 90%;
         margin: 0 auto;
         display: block;
-        padding-bottom:10px;
+        padding-bottom: 10px;
     }
-
-    .merit-box img{
-        width:100%;
-        
+    .merit-box img {
+        width: 100%;
     }
-
     .merit h2 {
-        margin:10px 0 8px;
+        margin: 10px 0 8px;
         text-align: center;
         font-size: 15px;
     }
-    
-    .merit-box p{
-        font-size:12px;
+    .merit-box p {
+        font-size: 12px;
     }
-
-    .merit-box img{
-        height:110px;
+    .merit-box img {
+        height: 110px;
         object-fit: cover;
         /* width:90% */
     }
-
-    .row{
-        margin:o auto;
+    .row {
+        margin: o auto;
     }
-
-    .menber-info{
+    .menber-info {
         display: block;
     }
-
-    .menber-info img{
-        width:120px;
-        height:auto;
+    .menber-info img {
+        width: 120px;
+        height: auto;
+    }
+    .realy {
+        padding-bottom: 30px;
+    }
+    .realy .txtbox {
+        width: 90%;
+    }
+    .realy .txtbox::before, .txtbox::after {
+        width: 30px;
+        height: 30px;
+    }
+    .realy .txtbox p {
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .remote-answer .txts {
+        padding-bottom: 20px;
+    }
+    .menber-coment {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .menber-coment .flex img {
+        width: 30%;
+        height: 30%;
+    }
+    .menber-coment .flex p {
+        margin-left: 15px;
+    }
+    .what-isara {
+        background-image: url(../image/classbgsp.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .what-isara .what {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+    .what-wrapper {
+        width: 95%;
+        margin-right: 0px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 15px;
+    }
+    .cost {
+        padding: 20px 0;
+        height: auto;
+    }
+    .cost .txtm {
+        padding-top: 0;
+    }
+    .juko-title img {
+        display: none;
+    }
+    .juko-box {
+        display: none;
     }
 
+    .juko-box-sp {
+        display: block;
+    }
+    .juko-info-sp {
+        background-color: #fef5e0;
+        width: 95%;
+        vertical-align: middle;
+        padding:5px;
+        margin: 0 auto;
+        margin-bottom:5px;
+    }
+    .juko-info-sp dt {
+        margin: 0;
+        height:35px;
+        vertical-align: middle;
+    }
+
+    .juko-info-sp dd{
+        margin-left: 0;
+        padding:15px
+    }
+
+    .juko-info-sp img{
+        vertical-align: middle;
+        padding-right:10px;
+    }
+    .skype {
+        margin-right: 50px;
+    }
+
+    .bangKok {
+        background-image: url(../image/bangkokbgsp.jpg);
+        background-size: cover;
+        background-position: center;
+       width:95%;
+       padding:50px 10px 30px 10px;
+       height:auto;
+    }
+
+    .bangKok h2{
+        font-size:24px;
+        text-align:center;
+    }
+
+    .bangKok p{
+        padding-left:20px;
+    }
 }
