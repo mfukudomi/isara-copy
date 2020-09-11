@@ -95,6 +95,7 @@ header {
 .isaratop {
     background-image: url('../image/main.jpg');
     background-size: cover;
+    background-position: center;
     height: 500px;
     text-align: center;
 }
@@ -274,7 +275,8 @@ header {
 .about-second {
     background-image: url(../image/aboutsecondbg.jpg);
     background-size: cover;
-    height: 450px;
+    background-position: center;
+    /* height: 450px; */
     padding: 50px 0;
 }
 
