@@ -35,7 +35,7 @@ p, h1, h2 {
     text-align: left;
 }
 
-.brsp{
+.brsp {
     display: none;
 }
 
@@ -145,7 +145,6 @@ header {
 .btn2 a {
     text-decoration: none;
     color: #ffffff;
-
     display: block;
     /*ここからポインタ範囲を拡張*/
     height: 100%;
@@ -235,7 +234,7 @@ header {
 .about {
     background-color: #FEF5E0;
     padding-top: 40px;
-    padding-bottom:40px;
+    padding-bottom: 40px;
 }
 
 .about .txtm {
@@ -254,10 +253,11 @@ header {
     border: solid 2px #EAB857;
     border-radius: 3px;
     background-color: #fff;
-    text-align:center;
+    text-align: center;
 }
-.about-box img{
-    height:60px;
+
+.about-box img {
+    height: 60px;
 }
 
 .picturebox {
@@ -275,7 +275,7 @@ header {
     background-image: url(../image/aboutsecondbg.jpg);
     background-size: cover;
     height: 450px;
-padding:50px 0;
+    padding: 50px 0;
 }
 
 .about-second h1 {
@@ -311,7 +311,6 @@ padding:50px 0;
 .about-second-txt2 {
     background-color: #EAB857;
     border-radius: 3px;
-    ;
     color: #fff;
     letter-spacing: 3px;
 }
@@ -347,12 +346,15 @@ padding:50px 0;
 }
 
 .learning-box {
-    margin: 40px 0;
+    margin: 40px auto;
+    width:90%;
 }
 
 .learning-box img {
     margin-right: 15px;
     padding: 0 15px;
+    width: 180px;
+    height: auto;
 }
 
 /* /////////////////////// merit /////////////////////// */
@@ -360,7 +362,6 @@ padding:50px 0;
 .merit {
     background-color: #FEF5E0;
     padding-top: 30px;
-    height: 930px;
 }
 
 .merit>.txtbox .txtl {
@@ -368,9 +369,16 @@ padding:50px 0;
     margin-bottom: 40px;
 }
 
+.merit-space{
+    width:90%;
+    margin:0 auto;
+}
+
 .merit-box {
-    width: 28%;
+    width: 30%;
     margin: 0 10px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .merit h2 {
@@ -381,19 +389,23 @@ padding:50px 0;
     font-weight: 100;
 }
 
+.merit-box p{
+    text-align:left;
+}
+
 .merit-box2 {
     text-align: center;
-    margin: 30px;
+    margin: 30px 30px 10px 30px;
+    padding:30px 0;
     border: solid 2px #eab857;
     border-radius: 3px;
     background-color: #fff;
-    height: 230px;
+    /* height: 230px; */
 }
 
 .merit-box2 h1 {
-    font-size: 28px;
     font-weight: 600;
-    margin: 30px 0 10px 0;
+    margin-bottom:10px;
     text-align: center;
     color: #eab857
 }
@@ -410,11 +422,12 @@ padding:50px 0;
 .menber {
     background-image: url(../image/teacherbg.jpg);
     background-size: cover;
-    height: 1380px;
+    text-align:center;
+    padding:50px 0;
 }
 
 .menber h2 {
-    padding-top: 85px;
+    padding-top: 35px;
     padding-bottom: 40px;
     color: #fff
 }
@@ -423,14 +436,17 @@ padding:50px 0;
     color: #fff;
 }
 
+
+
 .menber-info {
-    width: 33%;
+    vertical-align: top;
+    width: 372px;
     margin: 10px 10px;
     box-sizing: border-box;
     padding: 10px;
-    text-align:center;
+    text-align: center;
+    display: inline-block;
 }
-
 
 .menber-content .txtss {
     margin: 0 0 10px;
@@ -443,8 +459,8 @@ padding:50px 0;
 .menber .menber-content {
     border: solid 2px #fff;
     margin-top: -50px;
-    padding: 40px 50px;
-    font-size: 16px;
+    padding: 40px 23px;
+    /* font-size: 16px; */
     letter-spacing: 2.0px;
     line-height: 25px;
     box-sizing: border-box;
@@ -577,8 +593,8 @@ padding:50px 0;
     background-image: url(../image/classbg.jpg);
     background-size: cover;
     height: 800px;
-    margin:0 auto;
-    text-align:center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .what-isara .what {
@@ -638,11 +654,8 @@ padding:50px 0;
 .juko {
     margin: 0 auto;
     margin-bottom: 40px;
-    text-align:center;
+    text-align: center;
 }
-
-
-
 
 .juko-info {
     background-color: #fef5e0;
@@ -738,12 +751,12 @@ padding:50px 0;
     margin: 0 auto;
 }
 
-.present-title{
+.present-title {
     position: relative;
-    bottom: -45px; 
-    width: 45%; 
-    background-color: #f7c23c; 
-    margin: 0 auto; 
+    bottom: -45px;
+    width: 45%;
+    background-color: #f7c23c;
+    margin: 0 auto;
 }
 
 .present0 {
@@ -887,88 +900,142 @@ footer {
 }
 
 .footer-sns {
-    text-align:center;
-    padding-bottom:30px;
+    text-align: center;
+    padding-bottom: 30px;
 }
-/* //////////////// レスポンシブ //////////////// */
-@media(max-width:768px){
-    .txtl{
-        font-size:18px;
-    }
 
-    .txtm{
+/* //////////////// レスポンシブ max:768 //////////////// */
+@media(max-width:1000px) {
+
+    .row{
+    }
+    
+    .menber-info{
+        display: block;
+        width:90%;
+        margin:0 auto;
+    }
+}
+
+/* //////////////// レスポンシブ max:768 //////////////// */
+
+@media(max-width:768px) {
+    .txtl {
+        font-size: 18px;
+    }
+    .txtm {
         font-size: 13px;
     }
-
-    .txts{
+    .txts {
         font-size: 12px;
     }
-
-    .txts{
-        font-size:8px;
+    .txtss {
+        font-size: 8px;
     }
-
-    .brsp{
+    .brsp {
         display: block;
     }
-
-    .btn{
+    .btn {
         display: none;
     }
-
     .txtbox {
         width: 90%;
     }
-
-    .freedom { 
-        padding: 30px 0; 
+    .freedom {
+        padding: 30px 0;
         /* height: inherit;  */
-        background-repeat: no-repeat; 
-        background-size: contain; 
-        background-position: center bottom; 
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
     }
-
-
-    .about-box img{
-        height:30px;
+    .about-box img {
+        height: 30px;
     }
-
-    .about-second{
-        background-image:url(../image/aboutsecondbgsp.jpg);
-        padding:30px;
+    .about-second {
+        background-image: url(../image/aboutsecondbgsp.jpg);
+        padding: 30px;
     }
-
     .about-second-flex {
         display: block;
-        margin:0 auto;
+        margin: 0 auto;
     }
-
     .about-second-step {
         width: 90%;
         padding: 0;
-        margin:0 auto;
-        height:auto;
-        padding-bottom:10px;
-        margin-bottom:10px;
+        margin: 0 auto;
+        height: auto;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
-
-    .about-second-txt2{
-        font-size:13px;
+    .about-second-txt2 {
+        font-size: 13px;
     }
-    .about-second-txt3{
-        margin-top:10px;
-        font-size:13px;
+    .about-second-txt3 {
+        margin-top: 10px;
+        font-size: 13px;
     }
-
-    .about-second-txt4{
-        margin-top:10px;
-        font-size:13px;
+    .about-second-txt4 {
+        margin-top: 10px;
+        font-size: 13px;
     }
-
     .skillup h2 {
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: 12px;
     }
+
+    .learning-box img {
+        margin-right: 0px;
+        padding: 0 15px;
+        width: 20%;
+        height: auto;
+    }
+
+    .merit-space{
+        width:100%;
+        margin:0 auto;
+        text-align:center;
+    }
     
+    .merit-box {
+        width:90%;
+        margin: 0 auto;
+        display: block;
+        padding-bottom:10px;
+    }
+
+    .merit-box img{
+        width:100%;
+        
+    }
+
+    .merit h2 {
+        margin:10px 0 8px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .merit-box p{
+        font-size:12px;
+    }
+
+    .merit-box img{
+        height:110px;
+        object-fit: cover;
+        /* width:90% */
+    }
+
+    .row{
+        margin:o auto;
+    }
+
+    .menber-info{
+        display: block;
+    }
+
+    .menber-info img{
+        width:120px;
+        height:auto;
+    }
+
 }
